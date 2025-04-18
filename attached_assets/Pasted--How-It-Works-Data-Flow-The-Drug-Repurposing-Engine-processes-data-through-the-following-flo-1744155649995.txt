@@ -1,0 +1,42 @@
+## How It Works
+
+### Data Flow
+
+The Drug Repurposing Engine processes data through the following flow:
+
+1. **Data Collection**: PubMed articles, drug databases, and gene expression datasets are collected through the data ingestion modules.
+
+2. **Data Normalization**: Drug names, disease terms, and gene identifiers are normalized using RxNorm and UMLS mapping.
+
+3. **Text Analysis**: Natural language processing techniques extract drug-disease relationships and potential mechanisms from scientific literature.
+
+4. **Gene Expression Analysis**: Differential gene expression analysis identifies gene signatures associated with diseases and drug responses.
+
+5. **Knowledge Graph Construction**: A comprehensive knowledge graph is built, connecting drugs, diseases, genes, proteins, and biological pathways.
+
+6. **Mechanistic Explanation Generation**: AI models analyze the knowledge graph and other data to generate detailed explanations of potential mechanisms.
+
+7. **Confidence Score Calculation**: Multiple lines of evidence are integrated to calculate confidence scores for repurposing candidates.
+
+8. **Result Presentation**: Results are presented through the user interface and made available through the API.
+
+### Confidence Scoring
+
+Confidence scores are calculated based on multiple factors:
+
+- **Evidence Score**: Based on the quantity and quality of supporting evidence
+- **Mechanism Score**: Based on the clarity and plausibility of the proposed mechanism
+- **Novelty Score**: Based on the novelty of the repurposing candidate
+
+The overall confidence score is a weighted combination of these factors, with values ranging from 0.0 to 1.0.
+
+### Knowledge Graph
+
+The knowledge graph represents entities (drugs, diseases, genes, proteins, pathways) as nodes and relationships between them as edges. Key relationship types include:
+
+- **TREATS**: Drug treats disease
+- **CAUSES**: Entity causes disease
+- **ASSOCIATED_WITH**: Entity is associated with disease
+- **INTERACTS_WITH**: Drug interacts with protein
+- **PART_OF**: Entity is part of pathway
+- **REGULATES**: Entity regulates another entity

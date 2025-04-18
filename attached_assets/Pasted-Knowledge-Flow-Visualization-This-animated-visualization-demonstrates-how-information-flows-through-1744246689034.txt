@@ -1,0 +1,210 @@
+Knowledge Flow Visualization
+This animated visualization demonstrates how information flows through the biomedical knowledge network, revealing the complex interrelationships between drugs, diseases, targets, and mechanisms. The animation shows how repurposing opportunities emerge from these data relationships.
+Error accessing database: 'source'
+
+Creating a sample knowledge graph for visualization purposes.
+
+Error creating animated flow visualization: Invalid value of type 'builtins.list' received for the 'color' property of scatter.line Received value: ['rgba(0, 0, 255, 0.6)', 'rgba(0, 0, 255, 0.6)', 'rgba(0,0,0,0)', 'rgba(255, 165, 0, 0.6)', 'rgba(255, 165, 0, 0.6)', 'rgba(0,0,0,0)', 'rgba(0, 0, 255, 0.6)', 'rgba(0, 0, 255, 0.6)', 'rgba(0,0,0,0)', 'rgba(255, 165, 0, 0.6)', 'rgba(255, 165, 0, 0.6)', 'rgba(0,0,0,0)', 'rgba(0, 0, 255, 0.6)', 'rgba(0, 0, 255, 0.6)', 'rgba(0,0,0,0)']
+
+The 'color' property is a color and may be specified as:
+  - A hex string (e.g. '#ff0000')
+  - An rgb/rgba string (e.g. 'rgb(255,0,0)')
+  - An hsl/hsla string (e.g. 'hsl(0,100%,50%)')
+  - An hsv/hsva string (e.g. 'hsv(0,100%,100%)')
+  - A named CSS color:
+        aliceblue, antiquewhite, aqua, aquamarine, azure,
+        beige, bisque, black, blanchedalmond, blue,
+        blueviolet, brown, burlywood, cadetblue,
+        chartreuse, chocolate, coral, cornflowerblue,
+        cornsilk, crimson, cyan, darkblue, darkcyan,
+        darkgoldenrod, darkgray, darkgrey, darkgreen,
+        darkkhaki, darkmagenta, darkolivegreen, darkorange,
+        darkorchid, darkred, darksalmon, darkseagreen,
+        darkslateblue, darkslategray, darkslategrey,
+        darkturquoise, darkviolet, deeppink, deepskyblue,
+        dimgray, dimgrey, dodgerblue, firebrick,
+        floralwhite, forestgreen, fuchsia, gainsboro,
+        ghostwhite, gold, goldenrod, gray, grey, green,
+        greenyellow, honeydew, hotpink, indianred, indigo,
+        ivory, khaki, lavender, lavenderblush, lawngreen,
+        lemonchiffon, lightblue, lightcoral, lightcyan,
+        lightgoldenrodyellow, lightgray, lightgrey,
+        lightgreen, lightpink, lightsalmon, lightseagreen,
+        lightskyblue, lightslategray, lightslategrey,
+        lightsteelblue, lightyellow, lime, limegreen,
+        linen, magenta, maroon, mediumaquamarine,
+        mediumblue, mediumorchid, mediumpurple,
+        mediumseagreen, mediumslateblue, mediumspringgreen,
+        mediumturquoise, mediumvioletred, midnightblue,
+        mintcream, mistyrose, moccasin, navajowhite, navy,
+        oldlace, olive, olivedrab, orange, orangered,
+        orchid, palegoldenrod, palegreen, paleturquoise,
+        palevioletred, papayawhip, peachpuff, peru, pink,
+        plum, powderblue, purple, red, rosybrown,
+        royalblue, rebeccapurple, saddlebrown, salmon,
+        sandybrown, seagreen, seashell, sienna, silver,
+        skyblue, slateblue, slategray, slategrey, snow,
+        springgreen, steelblue, tan, teal, thistle, tomato,
+        turquoise, violet, wheat, white, whitesmoke,
+        yellow, yellowgreen
+
+The system encountered an issue creating the data flow visualization. This could be due to missing data or connection issues with the knowledge graph database.
+
+Real-time Global Impact
+$14.3B
+Potential Cost Savings
+327,500
+Research Hours Saved
+1.2M
+Potential Patients Benefited
+Featured Case Studies
+Metformin
+Original Use
+Type 2 Diabetes
+Repurposed For
+Cancer Prevention
+<div class="case-study-metric">
+        <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+            <span style="font-weight: 600;">Success Rate</span>
+            <span style="font-weight: 700;">74%</span>
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" style="width: 74%"></div>
+        </div>
+    </div>
+
+    <div style="display: flex; justify-content: space-between; margin: 15px 0;">
+        <div style="text-align: center; width: 48%;">
+            <div style="font-size: 0.9rem; color: #6c757d;">Cost Savings</div>
+            <div style="font-size: 1.5rem; font-weight: 700; background: linear-gradient(135deg, #0466c8, #0353a4); -webkit-background-clip: text; background-clip: text; color: transparent;">$830M</div>
+        </div>
+        <div style="text-align: center; width: 48%;">
+            <div style="font-size: 0.9rem; color: #6c757d;">Lives Impacted</div>
+            <div style="font-size: 1.5rem; font-weight: 700; background: linear-gradient(135deg, #0466c8, #0353a4); -webkit-background-clip: text; background-clip: text; color: transparent;">215,000</div>
+        </div>
+    </div>
+
+    <div style="margin-top: 15px;">
+        <div style="font-size: 0.9rem; color: #6c757d;">Time to Market</div>
+        <div style="display: flex; align-items: center; margin-top: 5px;">
+            <div style="height: 20px; width: 25.200000000000003%; background: linear-gradient(135deg, #0466c8, #0353a4); border-radius: 10px;"></div>
+            <div style="margin-left: 10px; font-weight: 600;">4.2 years</div>
+        </div>
+    </div>
+</div>
+<div class="case-study-footer">
+    vs. 12-15 years for new drugs
+</div>
+
+Thalidomide
+Original Use
+Morning Sickness (withdrawn)
+Repurposed For
+Multiple Myeloma
+<div class="case-study-metric">
+        <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+            <span style="font-weight: 600;">Success Rate</span>
+            <span style="font-weight: 700;">92%</span>
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" style="width: 92%"></div>
+        </div>
+    </div>
+
+    <div style="display: flex; justify-content: space-between; margin: 15px 0;">
+        <div style="text-align: center; width: 48%;">
+            <div style="font-size: 0.9rem; color: #6c757d;">Cost Savings</div>
+            <div style="font-size: 1.5rem; font-weight: 700; background: linear-gradient(135deg, #7209b7, #560bad); -webkit-background-clip: text; background-clip: text; color: transparent;">$1.2B</div>
+        </div>
+        <div style="text-align: center; width: 48%;">
+            <div style="font-size: 0.9rem; color: #6c757d;">Lives Impacted</div>
+            <div style="font-size: 1.5rem; font-weight: 700; background: linear-gradient(135deg, #7209b7, #560bad); -webkit-background-clip: text; background-clip: text; color: transparent;">155,000</div>
+        </div>
+    </div>
+
+    <div style="margin-top: 15px;">
+        <div style="font-size: 0.9rem; color: #6c757d;">Time to Market</div>
+        <div style="display: flex; align-items: center; margin-top: 5px;">
+            <div style="height: 20px; width: 39.0%; background: linear-gradient(135deg, #7209b7, #560bad); border-radius: 10px;"></div>
+            <div style="margin-left: 10px; font-weight: 600;">6.5 years</div>
+        </div>
+    </div>
+</div>
+<div class="case-study-footer">
+    vs. 12-15 years for new drugs
+</div>
+
+Sildenafil
+Original Use
+Hypertension
+Repurposed For
+Erectile Dysfunction
+<div class="case-study-metric">
+        <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+            <span style="font-weight: 600;">Success Rate</span>
+            <span style="font-weight: 700;">89%</span>
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" style="width: 89%"></div>
+        </div>
+    </div>
+
+    <div style="display: flex; justify-content: space-between; margin: 15px 0;">
+        <div style="text-align: center; width: 48%;">
+            <div style="font-size: 0.9rem; color: #6c757d;">Cost Savings</div>
+            <div style="font-size: 1.5rem; font-weight: 700; background: linear-gradient(135deg, #4cc9f0, #4361ee); -webkit-background-clip: text; background-clip: text; color: transparent;">$1.8B</div>
+        </div>
+        <div style="text-align: center; width: 48%;">
+            <div style="font-size: 0.9rem; color: #6c757d;">Lives Impacted</div>
+            <div style="font-size: 1.5rem; font-weight: 700; background: linear-gradient(135deg, #4cc9f0, #4361ee); -webkit-background-clip: text; background-clip: text; color: transparent;">350,000</div>
+        </div>
+    </div>
+
+    <div style="margin-top: 15px;">
+        <div style="font-size: 0.9rem; color: #6c757d;">Time to Market</div>
+        <div style="display: flex; align-items: center; margin-top: 5px;">
+            <div style="height: 20px; width: 22.799999999999997%; background: linear-gradient(135deg, #4cc9f0, #4361ee); border-radius: 10px;"></div>
+            <div style="margin-left: 10px; font-weight: 600;">3.8 years</div>
+        </div>
+    </div>
+</div>
+<div class="case-study-footer">
+    vs. 12-15 years for new drugs
+</div>
+
+Disease Burden Reduction Potential
+Our AI-powered Drug Repurposing Engine has identified potential therapeutic interventions that could significantly reduce the global disease burden across multiple categories. The visualizations below illustrate the projected impact of these interventions on disability-adjusted life years (DALYs).
+
+Key Impact Metrics
+21.5%
+Overall Burden Reduction
+96
+DALYs Saved per 100,000
+Neurological
+Highest Impact Category
+25.0% reduction potential
+Did you know? For every 1% reduction in global disease burden, approximately 5.8 million disability-adjusted life years could be saved annually.
+Explore Impact of a Specific Repurposing Candidate
+Select Drug
+
+Aspirin
+Select Disease
+
+Alzheimer's Disease
+Analyzing impact of Aspirin for Alzheimer's Disease 
+Explore the detailed analysis of this repurposing candidate through multiple dimensions, including molecular mechanisms, literature evidence, and potential global impact.
+
+KeyError: '\n gap'
+Traceback:
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 121, in exec_func_with_error_handling
+    result = func()
+             ^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 639, in code_to_exec
+    _mpa_v1(self._main_script_path)
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 159, in _mpa_v1
+    page.run()
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/streamlit/navigation/page.py", line 297, in run
+    exec(code, module.__dict__)
+File "/home/runner/workspace/pages/05_Global_Impact.py", line 694, in <module>
+    """.format(''.join([f'<div class="custom-tab" id="tab-{i}">{title}</div>' for i, title in enumerate(tab_titles)])), unsafe_allow_html=True)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

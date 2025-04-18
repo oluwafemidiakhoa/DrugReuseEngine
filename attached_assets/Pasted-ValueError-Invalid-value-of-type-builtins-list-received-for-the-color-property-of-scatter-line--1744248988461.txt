@@ -1,0 +1,44 @@
+ValueError: Invalid value of type 'builtins.list' received for the 'color' property of scatter.line Received value: [np.float64(0.9038587511452392), np.float64(0.9038587511452392), np.float64(0.9038587511452392), np.float64(0.4932957749391564), np.float64(0.4932957749391564), np.float64(0.4932957749391564), np.float64(0.47682554140443567), np.float64(0.47682554140443567), np.float64(0.47682554140443567), np.float64(0.7915880856099681), np.float64(0.7915880856099681), np.float64(0.7915880856099681), np.float64(0.4139120579886813), np.float64(0.4139120579886813), np.float64(0.4139120579886813), np.float64(0.26129511845672143), np.float64(0.26129511845672143), np.float64(0.26129511845672143), np.float64(0.8202155424358332), np.float64(0.8202155424358332), np.float64(0.8202155424358332), np.float64(0.6151334016371626), np.float64(0.6151334016371626), np.float64(0.6151334016371626), np.float64(0.5465567778919529), np.float64(0.5465567778919529), np.float64(0.5465567778919529), np.float64(0.33142376267635354), np.float64(0.33142376267635354), np.float64(0.33142376267635354), np.float64(0.7277735212750847), np.float64(0.7277735212750847), np.float64(0.7277735212750847), np.float64(0.799182218534378), np.float64(0.799182218534378), np.float64(0.799182218534378), np.float64(0.38266344798307), np.float64(0.38266344798307), np.float64(0.38266344798307), np.float64(0.9608914656601681), np.float64(0.9608914656601681), np.float64(0.9608914656601681), np.float64(0.475082915295361), np.float64(0.475082915295361), np.float64(0.475082915295361), np.float64(0.30748948914307617), np.float64(0.30748948914307617), np.float64(0.30748948914307617), np.float64(0.6962188456832534), np.float64(0.6962188456832534), np.float64(0.6962188456832534), np.float64(0.7668180952821847), np.float64(0.7668180952821847), np.float64(0.7668180952821847), np.float64(0.5344312445109826), np.float64(0.5344312445109826), np.float64(0.5344312445109826), np.float64(0.338103257046009), np.float64(0.338103257046009), np.float64(0.338103257046009), np.float64(0.7526642532915911), np.float64(0.7526642532915911), np.float64(0.7526642532915911), np.float64(0.7218563791370551), np.float64(0.7218563791370551), np.float64(0.7218563791370551), np.float64(0.22610487829013706), np.float64(0.22610487829013706), np.float64(0.22610487829013706), np.float64(0.914515882363319), np.float64(0.914515882363319), np.float64(0.914515882363319), np.float64(0.5580653729691648), np.float64(0.5580653729691648), np.float64(0.5580653729691648), np.float64(0.7575670360406692), np.float64(0.7575670360406692), np.float64(0.7575670360406692)] The 'color' property is a color and may be specified as: - A hex string (e.g. '#ff0000') - An rgb/rgba string (e.g. 'rgb(255,0,0)') - An hsl/hsla string (e.g. 'hsl(0,100%,50%)') - An hsv/hsva string (e.g. 'hsv(0,100%,100%)') - A named CSS color: aliceblue, antiquewhite, aqua, aquamarine, azure, beige, bisque, black, blanchedalmond, blue, blueviolet, brown, burlywood, cadetblue, chartreuse, chocolate, coral, cornflowerblue, cornsilk, crimson, cyan, darkblue, darkcyan, darkgoldenrod, darkgray, darkgrey, darkgreen, darkkhaki, darkmagenta, darkolivegreen, darkorange, darkorchid, darkred, darksalmon, darkseagreen, darkslateblue, darkslategray, darkslategrey, darkturquoise, darkviolet, deeppink, deepskyblue, dimgray, dimgrey, dodgerblue, firebrick, floralwhite, forestgreen, fuchsia, gainsboro, ghostwhite, gold, goldenrod, gray, grey, green, greenyellow, honeydew, hotpink, indianred, indigo, ivory, khaki, lavender, lavenderblush, lawngreen, lemonchiffon, lightblue, lightcoral, lightcyan, lightgoldenrodyellow, lightgray, lightgrey, lightgreen, lightpink, lightsalmon, lightseagreen, lightskyblue, lightslategray, lightslategrey, lightsteelblue, lightyellow, lime, limegreen, linen, magenta, maroon, mediumaquamarine, mediumblue, mediumorchid, mediumpurple, mediumseagreen, mediumslateblue, mediumspringgreen, mediumturquoise, mediumvioletred, midnightblue, mintcream, mistyrose, moccasin, navajowhite, navy, oldlace, olive, olivedrab, orange, orangered, orchid, palegoldenrod, palegreen, paleturquoise, palevioletred, papayawhip, peachpuff, peru, pink, plum, powderblue, purple, red, rosybrown, royalblue, rebeccapurple, saddlebrown, salmon, sandybrown, seagreen, seashell, sienna, silver, skyblue, slateblue, slategray, slategrey, snow, springgreen, steelblue, tan, teal, thistle, tomato, turquoise, violet, wheat, white, whitesmoke, yellow, yellowgreen
+Traceback:
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 121, in exec_func_with_error_handling
+    result = func()
+             ^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 639, in code_to_exec
+    _mpa_v1(self._main_script_path)
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 159, in _mpa_v1
+    page.run()
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/streamlit/navigation/page.py", line 297, in run
+    exec(code, module.__dict__)
+File "/home/runner/workspace/pages/12_Scientific_Visualizations.py", line 11, in <module>
+    show_scientific_visualizations()
+File "/home/runner/workspace/scientific_visualizations.py", line 685, in show_scientific_visualizations
+    network_fig = create_molecular_similarity_network()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/scientific_visualizations.py", line 572, in create_molecular_similarity_network
+    fig.add_trace(go.Scatter(
+                  ^^^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/plotly/graph_objs/_scatter.py", line 3530, in __init__
+    self["line"] = _v
+    ~~~~^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/plotly/basedatatypes.py", line 4852, in __setitem__
+    self._set_compound_prop(prop, value)
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/plotly/basedatatypes.py", line 5263, in _set_compound_prop
+    val = validator.validate_coerce(val, skip_invalid=self._skip_invalid)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/_plotly_utils/basevalidators.py", line 2504, in validate_coerce
+    v = self.data_class(v, skip_invalid=skip_invalid, _validate=_validate)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/plotly/graph_objs/scatter/_line.py", line 374, in __init__
+    self["color"] = _v
+    ~~~~^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/plotly/basedatatypes.py", line 4860, in __setitem__
+    self._set_prop(prop, value)
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/plotly/basedatatypes.py", line 5204, in _set_prop
+    raise err
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/plotly/basedatatypes.py", line 5199, in _set_prop
+    val = validator.validate_coerce(val)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/_plotly_utils/basevalidators.py", line 1406, in validate_coerce
+    self.raise_invalid_val(v)
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/_plotly_utils/basevalidators.py", line 299, in raise_invalid_val
+    raise ValueError(

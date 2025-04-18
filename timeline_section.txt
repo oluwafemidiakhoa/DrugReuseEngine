@@ -1,0 +1,188 @@
+        # Add improved implementation timeline with modern UI and specific years
+        st.markdown("""
+        <div style="display: flex; align-items: center; margin: 2.5rem 0 1.5rem 0;">
+            <div style="width: 36px; height: 36px; border-radius: 50%; 
+                      background: linear-gradient(135deg, #2563EB, #7C3AED); 
+                      margin-right: 14px; display: flex; justify-content: center; align-items: center;
+                      box-shadow: 0 2px 6px rgba(37, 99, 235, 0.2);">
+                <span style="color: white; font-weight: bold; font-size: 18px;">⏱️</span>
+            </div>
+            <h3 style="margin: 0; color: #1A202C; font-weight: 700; letter-spacing: -0.01em;">Implementation Timeline (2025-2029)</h3>
+        </div>
+        
+        <div style="background-color: rgba(37, 99, 235, 0.04); border-radius: 10px; padding: 18px; margin-bottom: 25px; border-left: 4px solid #2563EB;">
+            <p style="margin: 0; font-size: 1rem; line-height: 1.6; color: #1F2937;">
+            Our implementation timeline spans <strong>5 years</strong>, from initial clinical trials to global availability. This represents an accelerated development pathway compared to traditional drug development (typically 10-15 years), made possible by leveraging existing safety data from approved drugs.
+            </p>
+        </div>
+        
+        <style>
+        .timeline-2025 {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            padding-top: 35px;
+            margin: 30px 0 50px 0;
+        }
+        .timeline-2025::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 45px;
+            height: 8px;
+            width: 100%;
+            background: linear-gradient(90deg, #2563EB, #7C3AED);
+            border-radius: 4px;
+            z-index: 1;
+            box-shadow: 0 2px 8px rgba(37, 99, 235, 0.2);
+        }
+        .milestone {
+            position: relative;
+            width: 22%;
+            text-align: center;
+            z-index: 2;
+            transition: transform 0.3s ease;
+        }
+        .milestone:hover {
+            transform: translateY(-5px);
+        }
+        .milestone::before {
+            content: '';
+            position: absolute;
+            top: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 24px;
+            height: 24px;
+            background: white;
+            border: 5px solid #2563EB;
+            border-radius: 50%;
+            z-index: 2;
+            box-shadow: 0 2px 10px rgba(37, 99, 235, 0.3);
+            transition: all 0.2s ease;
+        }
+        .milestone:hover::before {
+            background: #EFF6FF;
+            transform: translateX(-50%) scale(1.1);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+        }
+        .year-label {
+            font-weight: 700;
+            color: #2563EB;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+            text-shadow: 0 1px 1px rgba(255,255,255,0.8);
+            transition: all 0.2s ease;
+        }
+        .milestone:hover .year-label {
+            color: #1E40AF;
+            transform: scale(1.05);
+        }
+        .milestone-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+            padding: 24px;
+            text-align: left;
+            height: 100%;
+            border: 1px solid rgba(0,0,0,0.05);
+            transition: all 0.2s ease;
+        }
+        .milestone:hover .milestone-card {
+            box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+            border-color: rgba(37, 99, 235, 0.1);
+        }
+        .milestone-card h5 {
+            color: #2563EB;
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 1.15rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+        .milestone-card p {
+            margin: 0;
+            color: #4B5563;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        .year-badge {
+            display: inline-block;
+            background-color: rgba(37, 99, 235, 0.1);
+            color: #2563EB;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+        }
+        </style>
+        
+        <div class="timeline-2025">
+            <div class="milestone">
+                <div class="year-label">2025</div>
+                <div class="milestone-card">
+                    <div class="year-badge">Year 1</div>
+                    <h5>Phase I/II Trials</h5>
+                    <p>Safety evaluation and preliminary efficacy testing with accelerated protocols</p>
+                </div>
+            </div>
+            
+            <div class="milestone">
+                <div class="year-label">2026-2027</div>
+                <div class="milestone-card">
+                    <div class="year-badge">Year 2-3</div>
+                    <h5>Phase III Trials</h5>
+                    <p>Large-scale efficacy testing with established safety profile from previous approvals</p>
+                </div>
+            </div>
+            
+            <div class="milestone">
+                <div class="year-label">2027-2028</div>
+                <div class="milestone-card">
+                    <div class="year-badge">Year 3-4</div>
+                    <h5>Regulatory Approval</h5>
+                    <p>Fast-track approval leveraging existing safety data and breakthrough therapy designation</p>
+                </div>
+            </div>
+            
+            <div class="milestone">
+                <div class="year-label">2028-2029</div>
+                <div class="milestone-card">
+                    <div class="year-badge">Year 4-5</div>
+                    <h5>Global Distribution</h5>
+                    <p>Market launch with established manufacturing infrastructure and distribution networks</p>
+                </div>
+            </div>
+        </div>
+        
+        <div style="background: rgba(37, 99, 235, 0.05); border-radius: 10px; padding: 20px; margin-top: -20px; margin-bottom: 30px; border-left: 5px solid #2563EB; box-shadow: 0 2px 6px rgba(37, 99, 235, 0.1);">
+            <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                <div style="width: 28px; height: 28px; border-radius: 50%; background: #2563EB; color: white; display: flex; justify-content: center; align-items: center; margin-right: 12px; box-shadow: 0 2px 4px rgba(37, 99, 235, 0.3);">
+                    <span style="font-size: 14px; font-weight: bold;">i</span>
+                </div>
+                <span style="font-weight: 700; color: #2563EB; font-size: 1.05rem;">Development Timeline Comparison</span>
+            </div>
+            
+            <div style="display: flex; align-items: center; margin-top: 15px;">
+                <div style="flex: 1;">
+                    <div style="height: 36px; border-radius: 18px; background: linear-gradient(90deg, #2563EB, #7C3AED); color: white; width: 40%; padding: 0 16px; display: flex; align-items: center; font-weight: 600; box-shadow: 0 2px 8px rgba(37, 99, 235, 0.2); transition: all 0.3s ease;">
+                        <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Repurposing: 5 Years</span>
+                    </div>
+                </div>
+                <div style="flex: 0 0 auto; padding: 0 20px; font-weight: 700; color: #4B5563; font-size: 1.1rem;">vs</div>
+                <div style="flex: 1;">
+                    <div style="height: 36px; border-radius: 18px; background: #E5E7EB; color: #4B5563; width: 90%; padding: 0 16px; display: flex; align-items: center; font-weight: 600; transition: all 0.3s ease;">
+                        <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Traditional: 10-15 Years</span>
+                    </div>
+                </div>
+            </div>
+            
+            <p style="margin: 15px 0 10px 0; font-size: 1rem; line-height: 1.6; color: #1F2937;">The drug repurposing approach dramatically reduces time-to-market by <strong>5-10 years</strong> compared to traditional drug development. This acceleration is possible because:</p>
+            <ul style="margin: 0; padding-left: 20px; color: #1F2937;">
+                <li style="margin-bottom: 6px;">Safety profiles are already well-established</li>
+                <li style="margin-bottom: 6px;">Manufacturing processes and formulations are optimized</li>
+                <li style="margin-bottom: 6px;">Regulatory pathways can be streamlined through fast-track designations</li>
+                <li>Development costs are reduced by 80-90%, enabling more efficient resource allocation</li>
+            </ul>
+        </div>""", unsafe_allow_html=True)

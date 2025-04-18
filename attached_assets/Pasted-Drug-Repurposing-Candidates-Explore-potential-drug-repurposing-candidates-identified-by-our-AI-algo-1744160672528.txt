@@ -1,0 +1,54 @@
+Drug Repurposing Candidates
+Explore potential drug repurposing candidates identified by our AI algorithms
+
+Error analyzing candidate with Gemini: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+
+Error generating explanation with Gemini: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+
+Error calculating confidence score with Gemini: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+
+LookupError: ********************************************************************** Resource [93mpunkt_tab[0m not found. Please use the NLTK Downloader to obtain the resource: [31m>>> import nltk >>> nltk.download('punkt_tab') [0m For more information see: https://www.nltk.org/data.html Attempted to load [93mtokenizers/punkt_tab/english/[0m Searched in: - '/home/runner/nltk_data' - '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/nltk_data' - '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/share/nltk_data' - '/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/nltk_data' - '/usr/share/nltk_data' - '/usr/local/share/nltk_data' - '/usr/lib/nltk_data' - '/usr/local/lib/nltk_data' **********************************************************************
+Traceback:
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 121, in exec_func_with_error_handling
+    result = func()
+             ^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 639, in code_to_exec
+    _mpa_v1(self._main_script_path)
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 159, in _mpa_v1
+    page.run()
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/streamlit/navigation/page.py", line 297, in run
+    exec(code, module.__dict__)
+File "/home/runner/workspace/pages/04_Repurposing_Candidates.py", line 362, in <module>
+    candidates = generate_new_candidates()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/utils.py", line 516, in generate_new_candidates
+    analyzed_candidates = batch_analyze_candidates(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/ai_analysis.py", line 407, in batch_analyze_candidates
+    analysis = analyze_repurposing_candidate(drug, disease, graph, pubmed_articles)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/ai_analysis.py", line 345, in analyze_repurposing_candidate
+    confidence_score = calculate_confidence_score(drug, disease, graph, pubmed_articles)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/ai_analysis.py", line 72, in calculate_confidence_score
+    return _calculate_traditional_confidence_score(drug, disease, graph, pubmed_articles)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/ai_analysis.py", line 136, in _calculate_traditional_confidence_score
+    drug_mech_tokens = [w.lower() for w in word_tokenize(drug['mechanism'])
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nltk/tokenize/__init__.py", line 142, in word_tokenize
+    sentences = [text] if preserve_line else sent_tokenize(text, language)
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nltk/tokenize/__init__.py", line 119, in sent_tokenize
+    tokenizer = _get_punkt_tokenizer(language)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nltk/tokenize/__init__.py", line 105, in _get_punkt_tokenizer
+    return PunktTokenizer(language)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nltk/tokenize/punkt.py", line 1744, in __init__
+    self.load_lang(lang)
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nltk/tokenize/punkt.py", line 1749, in load_lang
+    lang_dir = find(f"tokenizers/punkt_tab/{lang}/")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nltk/data.py", line 579, in find
+    raise LookupError(resource_not_found)

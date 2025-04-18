@@ -1,0 +1,28 @@
+networkx.exception.AmbiguousSolution: `eigenvector_centrality_numpy` does not give consistent results for disconnected graphs
+Traceback:
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 121, in exec_func_with_error_handling
+    result = func()
+             ^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 639, in code_to_exec
+    _mpa_v1(self._main_script_path)
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 159, in _mpa_v1
+    page.run()
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/streamlit/navigation/page.py", line 297, in run
+    exec(code, module.__dict__)
+File "/home/runner/workspace/pages/03_Knowledge_Graph.py", line 276, in <module>
+    centrality_df = compute_centrality_measures(G)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/knowledge_graph.py", line 171, in compute_centrality_measures
+    'eigenvector': nx.eigenvector_centrality_numpy(G)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/networkx/utils/decorators.py", line 788, in func
+    return argmap._lazy_compile(__wrapper)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "<class 'networkx.utils.decorators.argmap'> compilation 41", line 3, in argmap_eigenvector_centrality_numpy_38
+    import gzip
+            ^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/networkx/utils/backends.py", line 967, in __call__
+    return self.orig_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/networkx/algorithms/centrality/eigenvector.py", line 348, in eigenvector_centrality_numpy
+    raise nx.AmbiguousSolution(

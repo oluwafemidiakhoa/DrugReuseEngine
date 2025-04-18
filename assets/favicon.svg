@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle with gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3498db" />
+      <stop offset="100%" stop-color="#2c3e50" />
+    </linearGradient>
+    <linearGradient id="moleculeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e74c3c" />
+      <stop offset="100%" stop-color="#9b59b6" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main circle background -->
+  <circle cx="16" cy="16" r="15" fill="url(#bgGradient)" />
+  
+  <!-- Simplified molecule structure -->
+  <g transform="translate(16, 16) scale(0.5)">
+    <!-- Central node -->
+    <circle cx="0" cy="0" r="6" fill="#ffffff" />
+    
+    <!-- Connections -->
+    <line x1="-8" y1="-8" x2="-16" y2="-16" stroke="#ffffff" stroke-width="2" />
+    <line x1="8" y1="-8" x2="16" y2="-16" stroke="#ffffff" stroke-width="2" />
+    <line x1="-8" y1="8" x2="-16" y2="16" stroke="#ffffff" stroke-width="2" />
+    <line x1="8" y1="8" x2="16" y2="16" stroke="#ffffff" stroke-width="2" />
+    
+    <!-- Nodes -->
+    <circle cx="-16" cy="-16" r="4" fill="url(#moleculeGradient)" />
+    <circle cx="16" cy="-16" r="4" fill="url(#moleculeGradient)" />
+    <circle cx="-16" cy="16" r="4" fill="url(#moleculeGradient)" />
+    <circle cx="16" cy="16" r="4" fill="url(#moleculeGradient)" />
+    
+    <!-- Circular arrow -->
+    <path d="M-6,0 A20,20 0 1,1 6,0" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" />
+    <!-- Arrow head -->
+    <polygon points="6,0 10,4 9,-3" fill="#ffffff" />
+  </g>
+</svg>

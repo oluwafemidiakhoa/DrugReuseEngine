@@ -1,0 +1,76 @@
+1. Biomedical Knowledge APIs
+These provide curated biomedical relationships (drug-gene-disease).
+
+UMLS API (Unified Medical Language System) – via UMLS REST API
+
+DrugBank API – drug-target-disease relationships, clinical trials, mechanisms.
+
+Open Targets API – for drug-target-disease associations using evidence-based scoring.
+
+DisGeNET API – gene-disease associations.
+
+Comparative Toxicogenomics Database (CTD) API – chemical-gene-disease interactions.
+
+NCBI E-utilities – access PubMed, gene, and compound data (e.g., via Entrez).
+
+2. Drug, Chemical, and Compound APIs
+For structures, repurposing candidates, or interaction data.
+
+PubChem REST API – chemical structure, bioactivity, and assay data.
+
+ChEMBL API – bioactivity data, drug-target interaction data.
+
+BindingDB API – experimental binding affinities for drug-targets.
+
+RxNorm API – drug normalization, synonym mapping.
+
+3. Clinical and Regulatory Data
+Track approvals, label info, side effects, and adverse events.
+
+OpenFDA API – access clinical trials, drug labels, adverse events.
+
+ClinicalTrials.gov API – ongoing and past trials, outcomes, phases.
+
+EMA & FDA Drug Approval Databases (via scraping or third-party APIs).
+
+SIDER Database (via manual ingestion or scraping) – side effect data.
+
+4. Gene & Pathway APIs
+Link drug mechanisms to pathways and molecular functions.
+
+MyGene.info API – gene annotations.
+
+Reactome API – pathways and molecular interactions.
+
+KEGG API – pathways, gene-drug-disease mappings (can be parsed from REST).
+
+5. Knowledge Graphs & AI Models
+To create embeddings, perform reasoning, and generate hypotheses.
+
+BioThings APIs – family of APIs including MyGene, MyVariant, MyChem.
+
+Scibite, Monarch Initiative APIs – semantic graphs and ontologies.
+
+Hugging Face Hub APIs – for models like BioGPT, PubMedBERT, BioLinkBERT.
+
+GroqCloud API – for running large biomedical models like LLaMA3 or BioMedLM.
+
+LangChain + LangGraph + PyG – for GraphRAG and reasoning over graphs.
+
+6. Optional: Commercial & Premium APIs
+To boost enterprise-grade insights.
+
+Elsevier APIs (Embeddable ScienceDirect, Scopus) – literature-based discovery.
+
+Clarivate Integrity/ Cortellis APIs – premium drug repurposing and IP data.
+
+IBM Watson Discovery (biomedical corpora) – NLP + document mining.
+
+Next-Level Architecture
+To truly advance:
+
+Integrate a Graph Database like Neo4j or TigerGraph with biomedical triples.
+
+Use Graph Machine Learning (PyG) for link prediction on drug-disease nodes.
+
+Use LLMs + GraphRAG for hypothesis generation and reasoning.

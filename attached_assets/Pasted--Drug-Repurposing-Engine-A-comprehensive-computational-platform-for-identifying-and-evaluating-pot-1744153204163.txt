@@ -1,0 +1,66 @@
+# Drug Repurposing Engine
+
+A comprehensive computational platform for identifying and evaluating potential drug repurposing candidates through multi-modal data integration, knowledge graph analysis, and AI-driven insights.
+
+## Overview
+
+The Drug Repurposing Engine is a powerful tool designed to accelerate the discovery of new therapeutic applications for existing drugs. By leveraging multiple data sources, advanced analytics, and machine learning techniques, the system identifies promising drug-disease pairs and provides mechanistic explanations for their potential efficacy.
+
+Key features include:
+- Automated data ingestion from biomedical literature and databases
+- Multi-modal data processing and integration
+- Knowledge graph construction and analysis
+- AI-driven mechanistic explanations
+- Confidence scoring for repurposing candidates
+- Interactive user interface for exploration and visualization
+- Comprehensive RESTful API for programmatic access
+
+## System Architecture
+
+The Drug Repurposing Engine consists of several interconnected modules:
+
+1. **Data Ingestion**: Collects and normalizes data from various sources
+2. **Data Processing**: Analyzes and integrates multi-modal data
+3. **AI Insights**: Generates mechanistic explanations and confidence scores
+4. **User Interface**: Provides interactive exploration and visualization
+5. **API**: Enables programmatic access to the engine's functionality
+
+### Module Descriptions
+
+#### Data Ingestion
+
+The data ingestion module collects and normalizes data from various biomedical sources:
+
+- **PubMed Miner**: Extracts drug-disease relationships from scientific literature
+- **RxNorm Integration**: Normalizes drug names and retrieves drug information
+- **UMLS Mapping**: Maps terms to standardized medical concepts
+
+#### Data Processing
+
+The data processing module analyzes and integrates multi-modal data:
+
+- **Text Analysis**: Extracts relationships and insights from textual data
+- **Gene Expression**: Analyzes differential gene expression patterns
+- **Knowledge Graph**: Builds and analyzes a comprehensive knowledge graph
+
+#### AI Insights
+
+The AI insights module generates mechanistic explanations and confidence scores:
+
+- **Mechanistic Explanation**: Provides detailed explanations of potential mechanisms
+- **Confidence Scoring**: Calculates confidence scores for repurposing candidates
+
+#### User Interface
+
+The user interface module provides interactive exploration and visualization:
+
+- **Dashboard**: Displays summary statistics and key insights
+- **Query Interface**: Enables searching and filtering of repurposing candidates
+- **Visualizations**: Creates interactive visualizations of data and results
+
+#### API
+
+The API module enables programmatic access to the engine's functionality:
+
+- **Endpoints**: Provides RESTful API endpoints for accessing data and functionality
+- **Application**: Manages API requests and responses
